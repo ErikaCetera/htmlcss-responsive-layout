@@ -10,16 +10,25 @@ img {
 }
 
 body {
-    font-family: Helvetica sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section {
+    padding-top: 20px;
+}
+
+main {
+    background-color: #f6f5f3;
 }
 
 
 /* COMMON */
 /* Layout */
 
-.contaien {
+.container {
     width: 100%;
     padding: 0 20px;
+    margin: o auto;
 }
 
 .row {
@@ -30,6 +39,7 @@ body {
 
 /* HEADER */
 .nerko-one-regular {
+    font-size: 40px;
     font-family: "Nerko One", cursive;
     font-weight: 400;
     font-style: normal;
@@ -39,16 +49,46 @@ body {
 
 /* /HEADER */
 
+
+/* MAIN */
+/* section title */
+.title-tipology {
+    color: #a4a4a4;
+    font-size: 15px;
+}
+
+.addition,
+.title-dessert {
+    color: #4e3969;
+    font-weight: 800;
+    ;
+}
+
+.addition {
+    display: none;
+}
+
+/* /section title */
+
+
+/* video-section */
+.video {
+    height: 230px;
+}
+/* video-section */
+
 /*************/
 /* Responsive Tablet */
 
 @media screen and (min-width:768px) {
 
-    .contaien {
-        padding: 0, 40px;
+    .row {
+        padding: 20px;
+        justify-content: flex-start;
     }
 
-    .row {
-        justify-content: flex-start;
+    /* title-section */
+    .addition {
+        display: inline-block;
     }
 }
